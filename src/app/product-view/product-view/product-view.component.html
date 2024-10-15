@@ -1,0 +1,10 @@
+<div *ngIf="product; else noProduct">
+  <h2>{{ product!.title }}</h2>
+  <img [src]="product!.image" alt="{{ product!.title }}" />
+  <p>{{ product!.description }}</p>
+  <p>Price: ${{ product!.price }}</p>
+</div>
+<ng-template #noProduct>
+  <p>Producto no encontrado.</p>
+</ng-template>
+<button [routerLink]="['/home']">Return</button>
