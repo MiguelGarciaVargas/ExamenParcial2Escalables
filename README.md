@@ -1,27 +1,24 @@
 # Examen2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+Crea una aplicación de Angular que permita listar productos obtenidos desde una API y ver una página de detalles generales sobre los productos. La aplicación debe cumplir con los siguientes requisitos:
 
-## Development server
+## Requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Realizar una petición HTTP para obtener una lista de productos desde una API.
+- Crear una página que muestre la lista de productos.
+- Crear una página que muestre una vista general de los productos.
+- Definir y utilizar interfaces para tipar los datos de los productos.
+- Configurar las rutas necesarias en la aplicación.
 
-## Code scaffolding
+## API para usar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **URL**: [https://fakestoreapi.com/products](https://fakestoreapi.com/products)
 
-## Build
+La API devuelve una lista de productos con las siguientes propiedades:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `id`: Identificador único del producto.
+- `title`: Título del producto.
+- `price`: Precio del producto.
+- `description`: Descripción del producto.
+- `category`: Categoría del producto.
+- `image`: URL de la imagen del producto.
